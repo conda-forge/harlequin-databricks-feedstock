@@ -1,5 +1,5 @@
 {% set name = "harlequin-databricks" %}
-{% set version = "0.1.1" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/harlequin_databricks-{{ version }}.tar.gz
-  sha256: 2b5788ba94b8d4f9803fc7393770116cee6f70d0c08085f488cb8e133fe676c6
+  sha256: e696c12c5d554744b44c996089c51929bf38e73e61620fec822615761c138a71
 
 build:
   noarch: python
