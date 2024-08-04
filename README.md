@@ -144,5 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@alexmalins](https://github.com/alexmalins/)
-* [@conda-forge/harlequin](https://github.com/conda-forge/harlequin/)
+* [@conda-forge/harlequin](https://github.com/orgs/conda-forge/teams/harlequin/)
 
