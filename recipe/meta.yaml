@@ -1,5 +1,5 @@
 {% set name = "harlequin-databricks" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/harlequin_databricks-{{ version }}.tar.gz
-  sha256: acc227bc154ec712dc4a09e07381022d461f6d845b7758ea9eaefa6ef336e7d1
+  sha256: e37be7b8f7172ad10ebb23b413ffa80181e24c34174709084bad2b65051bc6bf
 
 build:
   noarch: python
@@ -21,8 +21,10 @@ requirements:
     - pip
   run:
     - python >=3.8.1,<4.0
-    - harlequin >=1.17.0,<2.0.0
+    - harlequin >=1.24.0,<2.0.0
     - databricks-sql-connector >=3.0.3,<4.0.0
+  run_constrained:
+    - databricks-sdk >=0.30.0
 
 test:
   imports:
