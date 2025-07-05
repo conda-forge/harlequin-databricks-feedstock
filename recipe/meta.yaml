@@ -17,14 +17,14 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - poetry-core
     - pip
+    - uv-build
   run:
     - python >={{ python_min }}
     - harlequin >=2.1.2
     - databricks-sql-connector >=4.0.4
   run_constrained:
-    - databricks-sdk >=0.40.0
+    - databricks-sdk >=0.57.0
 
 test:
   imports:
